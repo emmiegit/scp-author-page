@@ -50,9 +50,9 @@ http://www.wikidot.com/account/messages#/new/4598089
 **Involved Projects:**
 
 {% for article in articles -%}
-    {% if article.type == "scp" %}
+    {% if article.type == "scp" -%}
         {{render_article(article)}}
-    {% endif %}
+    {%- endif %}
 {%- endfor %}
 
 [!-- Tales --]
@@ -60,9 +60,9 @@ http://www.wikidot.com/account/messages#/new/4598089
 **Disciplinary Reports:**
 
 {% for article in articles -%}
-    {% if article.type == "tale" %}
+    {% if article.type == "tale" -%}
         {{render_article(article)}}
-    {% endif %}
+    {%- endif %}
 {%- endfor %}
 
 [!-- GoI Formats --]
@@ -70,9 +70,9 @@ http://www.wikidot.com/account/messages#/new/4598089
 **Documents recovered from Groups of Interest:**
 
 {% for article in articles -%}
-    {% if article.type == "goi-format" %}
+    {% if article.type == "goi-format" -%}
         {{render_article(article)}}
-    {% endif %}
+    {%- endif %}
 {%- endfor %}
 
 [!-- Hubs --]
@@ -80,7 +80,7 @@ http://www.wikidot.com/account/messages#/new/4598089
 **Metadata:**
 
 {% for article in articles -%}
-    {% if article.type == "hub" %}
+    {% if article.type == "hub" -%}
         {{render_article(article)}}
     {% endif %}
 {%- endfor %}
