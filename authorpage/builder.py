@@ -67,6 +67,8 @@ class Builder:
             if "contest" not in data:
                 article["contest"] = None
 
+        return data
+
     def render(self, output_filename: str = "output.ftml"):
         output_path = os.path.join(self.directory, output_filename)
         output_data = self.render_string()
