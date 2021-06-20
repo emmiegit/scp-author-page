@@ -11,12 +11,14 @@
 #
 
 import os
+import re
 
 import toml
 from jinja2 import Environment, FileSystemLoader
 
 from .wikidot import normalize
 
+SCP_NAME_REGEX = re.compile(r"SCP-[1-9]?[0-9]{3}(?:-(?:J|EX))?")
 
 class Builder:
     __slots__ = (
@@ -35,7 +37,6 @@ class Builder:
         self.jinja_env = Environment(
             loader=FileSystemLoader(directory),
             autoescape=False,
-            lstrip_blocks=True,
             keep_trailing_newline=True,
         )
 
@@ -55,16 +56,26 @@ class Builder:
         for article in data["articles"]:
             name = article["name"]
 
-            if "slug" not in data:
+            if "type" not in article:
+                if SCP_NAME_REGEX.match(name):
+                    article["type"] = "scp"
+                else:
+                    raise ValueError(f"No article type specified for '{name}'")
+
+            if article["type"] == "goi-format":
+                if "goi" not in article:
+                    raise ValueError(f"No GoI specified for goi-format document '{name}'")
+
+            if "slug" not in article:
                 article["slug"] = normalize(name)
 
-            if "title" not in data:
+            if "title" not in article:
                 article["title"] = name
 
-            if "co-authors" not in data:
+            if "co-authors" not in article:
                 article["co-authors"] = []
 
-            if "contest" not in data:
+            if "contest" not in article:
                 article["contest"] = None
 
         return data
