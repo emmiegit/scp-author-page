@@ -18,6 +18,7 @@ from .wikidot import normalize
 
 SCP_NAME_REGEX = re.compile(r"SCP-[1-9]?[0-9]{3}(?:-(?:J|EX))?")
 
+
 def load_data(data_path: str) -> dict:
     with open(data_path) as file:
         data = toml.load(file)

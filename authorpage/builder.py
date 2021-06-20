@@ -17,6 +17,7 @@ from jinja2 import Environment, FileSystemLoader
 from .data import load_data
 from .wikidot import normalize
 
+
 class Builder:
     __slots__ = (
         "directory",

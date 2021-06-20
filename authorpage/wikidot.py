@@ -21,6 +21,7 @@ COLON_DASH = re.compile(r"(:-)|(-:)")
 UNDERSCORE_DASH = re.compile(r"(_-)|(-_)")
 LEADING_OR_TRAILING_COLON = re.compile(r"(^:)|(:$)")
 
+
 def normalize(text: str) -> str:
     # Remove leading and trailing whitespace
     text = text.strip()
