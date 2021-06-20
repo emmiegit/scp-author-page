@@ -1,0 +1,84 @@
+[!--
+
+NOTE:
+
+This document is auto-generated using the template-based build system here:
+https://github.com/ammongit/scp-author-page
+
+Any changes you make directly to this page will likely be overwritten.
+
+If you wish to correct a typo or other issue with the page, please send a PM
+to the author instead:
+
+http://www.wikidot.com/account/messages#/new/4598089
+
+--]
+
+[[include theme:black-highlighter-theme]]
+[[include component:pride-highlighter | inc-nb-alt=--] ]]
+
+[!-- Image credit: https://commons.wikimedia.org/wiki/File:Birds_of_Sweden_2016_52.jpg --]
+[[include component:image-block
+    name=mallard.jpeg |
+    caption=--File photo of D-41562.--
+    An instance of //Anas platyrhynchos//.
+]]
+
+**Personnel #:** D-41562
+
+**Clearance:** Level-0
+
+**Nationality:** United States of America
+
+**Prior Profession:** Software Engineer
+
+**DOB:** 19██/██/██
+
+**IPLS:**[[footnote]]Involuntary Personnel Loyalty Score, from A (most loyal) to F (least loyal).[[/footnote]] B
+
+**Disposability Rating:** 4
+
+**Medical Notes:**
+* Class-2 Amnestic Resistance
+* Medium Cognitive Resistance Value (9.3)
+* Dislikes nuts
+
+[!-- SCPs --]
+
+**Involved Projects:**
+
+{% for article in articles %}
+    {% if article.type == "scp" %}
+        {{article|pprint}}
+    {% endif %}
+{% endfor %}
+
+[!-- Tales --]
+
+**Disciplinary Reports:**
+
+{% for article in articles %}
+    {% if article.type == "tale" %}
+        {{article|pprint}}
+    {% endif %}
+{% endfor %}
+
+[!-- GoI Formats --]
+
+**Documents recovered from Groups of Interest:**
+
+{% for article in articles %}
+    {% if article.type == "goi-format" %}
+        {{article|pprint}}
+    {% endif %}
+{% endfor %}
+
+[!-- Hubs --]
+
+**Metadata:**
+
+{% for article in articles %}
+    {% if article.type == "hub" %}
+        {{article|pprint}}
+    {% endif %}
+{% endfor %}

@@ -31,6 +31,7 @@ title = "Lover's Quarrel"
 [[articles]]
 name = "SCP-4853"
 title = "&SCP-4853"
+title-override = true
 
 [[articles]]
 name = "SCP-4781"
@@ -89,29 +90,39 @@ contest = ["scp6000contesthub", "6k-Con"]
 
 # Tales
 [[articles]]
+type = "tale"
 name = "The Heart of the Beast"
 slug = "heart-of-the-beast"
 contest = ["canon-renaissance-contest", "Canon Renaissance Contest"]
 
 [[articles]]
+type = "tale"
 name = "The Pumpkin Mystery"
 slug = "pumpkin-mystery"
 contest = ["jam-con-2021", "JamCon 2021"]
 
 # GoI Formats
 [[articles]]
+type = "goi-format"
 name = "UIU File: 2017-102"
 title = "WHISPER IN THE WIND"
 slug = "uiu-file-2017-102"
 co-authors = ["pxdnbluesoul"]
 contest = ["collaboration-contest", "Collab-Con"]
+goi = ["unusual-incidents-unit", "Unusual Incidents Unit"]
 
-# Other
+# Hubs
 [[articles]]
-name = "aismallard's author page"
-slug = "aismallard"
-
-[[articles]]
+type = "hub"
 name = "Finding Asmodeus Hub"
 title = "Finding Asmodeus"
 contest = ["canon-renaissance-contest", "Canon Renaissance Contest"]
+
+# Author Page
+[[articles]]
+type = "author"
+name = "aismallard's author page"
+slug = "aismallard"
+
+# Other
+# (none)
