@@ -53,11 +53,13 @@ class Builder:
         base_url = data["base-url"]
 
         for article in data["articles"]:
+            name = data["name"]
+
             if "slug" not in data:
-                data["slug"] = normalize(data["name"])
+                data["slug"] = normalize(name)
 
             if "title" not in data:
-                data["title"] = data["name"]
+                data["title"] = name
 
             if "co-authors" not in data:
                 data["co-authors"] = []
