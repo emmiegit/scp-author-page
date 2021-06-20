@@ -6,7 +6,7 @@ Requires Python 3.7+. Available under the terms of the MIT License.
 
 ## Setup
 
-```
+```sh
 $ pip install -r requirements.txt
 ```
 
@@ -14,20 +14,20 @@ Also install `requirements-dev.txt` if developing. All files should be formatted
 
 ## Linting
 
-```
+```sh
 $ black authorpage  # Format source code
 $ pylint authorpage  # Check source code
 ```
 
 ## Usage
 
-```
+```sh
 $ python -m authorpage <directory...>
 ```
 
 For instance:
 
-```
+```sh
 $ python -m authorpage scp
 ```
 
