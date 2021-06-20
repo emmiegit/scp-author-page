@@ -49,23 +49,23 @@ class Builder:
         with open(data_path) as file:
             data = toml.load(file)
 
-        # Hydrate data according to patterns
+        # Hydrate data according to structures
         base_url = data["base-url"]
 
         for article in data["articles"]:
-            name = data["name"]
+            name = article["name"]
 
             if "slug" not in data:
-                data["slug"] = normalize(name)
+                article["slug"] = normalize(name)
 
             if "title" not in data:
-                data["title"] = name
+                article["title"] = name
 
             if "co-authors" not in data:
-                data["co-authors"] = []
+                article["co-authors"] = []
 
             if "contest" not in data:
-                data["contest"] = None
+                article["contest"] = None
 
     def render(self, output_filename: str = "output.ftml"):
         output_path = os.path.join(self.directory, output_filename)
