@@ -2,6 +2,10 @@
   [/system:page-tags/tag/{{tag}}#pages {{name}}]
 {%- endmacro %}
 
+{% macro user(name) -%}
+  [[*user {{name}}]]
+{%- endmacro %}
+
 {% macro render_article(data) -%}
     {{data|pprint}}
 {%- endmacro %}
