@@ -15,6 +15,8 @@ import os
 import toml
 from jinja2 import Environment, FileSystemLoader
 
+from .wikidot import normalize
+
 
 class Builder:
     __slots__ = (
@@ -45,7 +47,23 @@ class Builder:
         data_path = os.path.join(self.directory, data_filename)
 
         with open(data_path) as file:
-            return toml.load(file)
+            data = toml.load(file)
+
+        # Hydrate data according to patterns
+        base_url = data["base-url"]
+
+        for article in data["articles"]:
+            if "slug" not in data:
+                data["slug"] = normalize(data["name"])
+
+            if "title" not in data:
+                data["title"] = data["name"]
+
+            if "co-authors" not in data:
+                data["co-authors"] = []
+
+            if "contest" not in data:
+                data["contest"] = None
 
     def render(self, output_filename: str = "output.ftml"):
         output_path = os.path.join(self.directory, output_filename)
