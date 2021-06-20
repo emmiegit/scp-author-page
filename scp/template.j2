@@ -14,6 +14,8 @@ http://www.wikidot.com/account/messages#/new/4598089
 
 --]
 
+{% from 'article.j2' import render_article %}
+
 [[include theme:black-highlighter-theme]]
 [[include component:pride-highlighter | inc-nb-alt=--] ]]
 
@@ -47,38 +49,38 @@ http://www.wikidot.com/account/messages#/new/4598089
 
 **Involved Projects:**
 
-{% for article in articles %}
+{% for article in articles -%}
     {% if article.type == "scp" %}
-        {{article|pprint}}
+        {{render_article(article)}}
     {% endif %}
-{% endfor %}
+{%- endfor %}
 
 [!-- Tales --]
 
 **Disciplinary Reports:**
 
-{% for article in articles %}
+{% for article in articles -%}
     {% if article.type == "tale" %}
-        {{article|pprint}}
+        {{render_article(article)}}
     {% endif %}
-{% endfor %}
+{%- endfor %}
 
 [!-- GoI Formats --]
 
 **Documents recovered from Groups of Interest:**
 
-{% for article in articles %}
+{% for article in articles -%}
     {% if article.type == "goi-format" %}
-        {{article|pprint}}
+        {{render_article(article)}}
     {% endif %}
-{% endfor %}
+{%- endfor %}
 
 [!-- Hubs --]
 
 **Metadata:**
 
-{% for article in articles %}
+{% for article in articles -%}
     {% if article.type == "hub" %}
-        {{article|pprint}}
+        {{render_article(article)}}
     {% endif %}
-{% endfor %}
+{%- endfor %}
