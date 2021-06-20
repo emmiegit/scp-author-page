@@ -2,7 +2,22 @@
 
 Scripts to automatically generate my author page from static data.
 
-Available under the terms of the MIT License.
+Requires Python 3.7+. Available under the terms of the MIT License.
+
+## Setup
+
+```
+$ pip install -r requirements.txt
+```
+
+Also install `requirements-dev.txt` if developing. All files should be formatted with [black](https://github.com/psf/black).
+
+## Linting
+
+```
+$ black authorpage  # Format source code
+$ pylint authorpage  # Check source code
+```
 
 ## Usage
 
