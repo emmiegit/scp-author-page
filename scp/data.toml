@@ -1,0 +1,117 @@
+base-url = "https://scp-wiki.wikidot.com/"
+
+# SCP Articles
+[[articles]]
+name = "SCP-4339"
+title = "The Attribtue Pen"
+
+[[articles]]
+name = "SCP-3597"
+title = "Maladroit"
+contest = ["cliche-con-2019", "Cliché-Con"]
+
+[[articles]]
+name = "SCP-4447"
+title = "Sasha's Super Shuttle Service!"
+
+[[articles]]
+name = "SCP-4322"
+title = "Sleepless Dreams"
+
+[[articles]]
+name = "SCP-4406"
+title = "SUDDEN THUNDER"
+co-authors = ["pxdnbluesoul"]
+contest = ["collaboration-contest", "Collab-Con"]
+
+[[articles]]
+name = "SCP-4838"
+title = "Lover's Quarrel"
+
+[[articles]]
+name = "SCP-4853"
+title = "&SCP-4853"
+
+[[articles]]
+name = "SCP-4781"
+title = "Sour and Dill"
+
+[[articles]]
+name = "SCP-5900"
+title = "PITCHBLACK"
+contest = ["scp5000contesthub", "5k-Con"]
+
+[[articles]]
+name = "SCP-5633"
+title = "This Will Require A Great Amount of Blood"
+co-authors = [
+    "Rex Atlas",
+    "Captain Kirby",
+    "JackalRelated",
+    "magna2s",
+    "Modulum",
+    "Rounderhouse",
+    "Sterbai",
+    "Tufto",
+    "Uncle Nicolini",
+    "Woedenaz",
+    "Yossipossi",
+]
+
+[[articles]]
+name = "SCP-5510"
+title = "Universal Remote"
+
+[[articles]]
+name = "SCP-5502"
+title = "Where the Smoke Trail Ends"
+
+[[articles]]
+name = "SCP-5134"
+title = "Itchy"
+
+[[articles]]
+name = "SCP-5446"
+title = "Shock Troops"
+contest = ["jam-con-2021", "JamCon 2021"]
+
+[[articles]]
+name = "SCP-5871"
+title = "Retroactive Knife"
+contest = ["jam-con-2021", "JamCon 2021"]
+
+[[articles]]
+name = "SCP-6000 Contest Entry"
+title = "The True Empire"
+slug = "6000contestaisstorm"
+co-authors = ["stormbreath"]
+contest = ["scp6000contesthub", "6k-Con"]
+
+# Tales
+[[articles]]
+name = "The Heart of the Beast"
+slug = "heart-of-the-beast"
+contest = ["canon-renaissance-contest", "Canon Renaissance Contest"]
+
+[[articles]]
+name = "The Pumpkin Mystery"
+slug = "pumpkin-mystery"
+contest = ["jam-con-2021", "JamCon 2021"]
+
+# GoI Formats
+[[articles]]
+name = "UIU File: 2017-102"
+title = "WHISPER IN THE WIND"
+slug = "uiu-file-2017-102"
+co-authors = ["pxdnbluesoul"]
+contest = ["collaboration-contest", "Collab-Con"]
+
+# Other
+[[articles]]
+name = "aismallard's author page"
+slug = "aismallard"
+
+[[articles]]
+name = "Finding Asmodeus Hub"
+title = "Finding Asmodeus"
+contest = ["canon-renaissance-contest", "Canon Renaissance Contest"]
