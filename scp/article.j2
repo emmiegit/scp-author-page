@@ -17,15 +17,16 @@
 {% macro render_article(article) %}
 [[div class="blockquote"]]
 [[module ListPages name="{{ article.slug }}" limit="1"]]
-{% if article.title_override -%}
-  [[span class="page-header"]]{{ article.title_override }}[[/span]]
+[[span class="page-header"]]
+{%- if article.title_override -%}
+  {{ article.title_override }}
 {%- else -%}
-  [[span class="page-header"]]**{{ link(article.slug, article.name, article.normal_slug) }}**
+  **{{ link(article.slug, article.name, article.normal_slug) }}**
   {%- if article.title -%}
     : {{ article.title }}
-  {%- endif %} (##green|+%%rating%%##) (%%comments%% 💬)[[/span]]
-{%- endif %}
-
+  {%- endif %}
+{%- endif -%}
+{{ ' ' -}} (##green|+%%rating%%##) (%%comments%% 💬)[[/span]]
 {{ render_article_metadata(article) }}
 ----
 [[div class="page-stats"]]
