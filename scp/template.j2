@@ -62,7 +62,7 @@ http://www.wikidot.com/account/messages#/new/4598089
 
 {% for article in articles -%}
     {% if article.type == "scp" -%}
-        {{render_article(article)}}
+        {{ render_article(article) }}
     {%- endif %}
 {%- endfor %}
 
@@ -72,7 +72,7 @@ http://www.wikidot.com/account/messages#/new/4598089
 
 {% for article in articles -%}
     {% if article.type == "tale" -%}
-        {{render_article(article)}}
+        {{ render_article(article) }}
     {%- endif %}
 {%- endfor %}
 
@@ -82,7 +82,7 @@ http://www.wikidot.com/account/messages#/new/4598089
 
 {% for article in articles -%}
     {% if article.type == "goi-format" -%}
-        {{render_article(article)}}
+        {{ render_article(article) }}
     {%- endif %}
 {%- endfor %}
 
@@ -92,7 +92,7 @@ http://www.wikidot.com/account/messages#/new/4598089
 
 {% for article in articles -%}
     {% if article.type == "hub" -%}
-        {{render_article(article)}}
+        {{ render_article(article) }}
     {% endif %}
 {%- endfor %}
 

@@ -1,15 +1,15 @@
 {% macro link(slug, name, is_normal = False) -%}
   {% if is_normal -%}
-    [[[{{name}}]]]
+    [[[{{ name }}]]]
   {%- else -%}
-    [[[{{slug}}|{{name}}]]]
+    [[[{{ slug }}|{{ name }}]]]
   {%- endif -%}
 {%- endmacro %}
 
 {% macro tag(tag, name) -%}
-  [/system:page-tags/tag/{{tag}}#pages {{name}}]
+  [/system:page-tags/tag/{{ tag }}#pages {{ name }}]
 {%- endmacro %}
 
 {% macro user(name) -%}
-  [[*user {{name}}]]
+  [[*user {{ name }}]]
 {%- endmacro %}
