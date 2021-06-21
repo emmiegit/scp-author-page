@@ -4,43 +4,57 @@ base-url = "https://scp-wiki.wikidot.com/"
 [[articles]]
 name = "SCP-4339"
 title = "The Attribute Pen"
+snippet = "D-91386 was told to say \"my name is D-88111\".\nD-88111's identification was changed."
 
 [[articles]]
 name = "SCP-3597"
 title = "Maladroit"
 contest = ["cliche-con-2019", "Cliché-Con"]
+snippet = "**Description:** [DATA EXPUNGED]"
 
 [[articles]]
 name = "SCP-4447"
 title = "Sasha's Super Shuttle Service!"
+snippet = "When the anomaly is activated, the individuals, including their clothing, attached equipment, and jewelry, immediately switch positions."
+
+[[articles]]
+name = "SCP-1294-J"
+title = "Watering-down Can"
+snippet = "Oak wood restraints painted cyan and reinforced with lead-telekill-iron-oxide alloy have been attached to the object to prevent spills."
 
 [[articles]]
 name = "SCP-4322"
 title = "Sleepless Dreams"
+snippet = "SCP-4322 is a radio transceiver, anomalously modified to transmit psionic waves instead of electromagnetic radiation."
 
 [[articles]]
 name = "SCP-4406"
 title = "SUDDEN THUNDER"
 co-authors = ["pxdnbluesoul"]
 contest = ["collaboration-contest", "Collab-Con"]
+snippet = "SCP-4406 is highly advanced surveillance software, which masks itself from the host operating system by means of an electronic antimeme."
 
 [[articles]]
 name = "SCP-4838"
 title = "Lover's Quarrel"
+snippet = "I know this is a hard time for us, but I truly do love you. We are strong, we'll make it through this."
 
 [[articles]]
 name = "SCP-4853"
 title = "&SCP-4853"
 title-override = "&**[[[SCP-4853]]]**"
+snippet = "The only designation which may be applied to SCP-4853 is SCP-4853."
 
 [[articles]]
 name = "SCP-4781"
 title = "Sour and Dill"
+snippet = "Specimens of SCP-4781 exhibit a cognitohazardous effect, causing misidentification of the anomaly and its effects as non-anomalous dill pickles."
 
 [[articles]]
 name = "SCP-5900"
 title = "PITCHBLACK"
 contest = ["scp5000contesthub", "5k-Con"]
+snippet = "During this time, surveillance satellites, Site-07 communications, intelligence processing, and IntSCPFN file sync were inoperable. The full extent and nature of the anomaly are presently unknown."
 
 [[articles]]
 name = "SCP-5633"
@@ -58,10 +72,12 @@ co-authors = [
     "Woedenaz",
     "Yossipossi",
 ]
+snippet = "SCP-5633 is a large humanoid body located approximately 50m underground. The inside of SCP-5633 consists of enlarged veins, and steel scaffolding. The veins contain liquid that is both red and black in coloration, and highly viscous. Pipes extracting liquid from SCP-5633's veins are located along its arms, legs and back."
 
 [[articles]]
 name = "SCP-5510"
 title = "Universal Remote"
+snippet = "Your session will expire after 118 seconds of inactivity."
 
 [[articles]]
 name = "SCP-5502"
@@ -110,6 +126,7 @@ slug = "uiu-file-2017-102"
 co-authors = ["pxdnbluesoul"]
 contest = ["collaboration-contest", "Collab-Con"]
 goi = ["unusual-incidents-unit", "Unusual Incidents Unit"]
+snippet = "Once delivered to a host, WHISPER is capable of inspecting, modifying, and emptying the host's counters and registers at will."
 
 # Hubs
 [[articles]]
