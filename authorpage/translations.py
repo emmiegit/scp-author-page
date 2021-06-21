@@ -35,6 +35,7 @@ LANGUAGE_CODES = {
     "Українська": "UK",
 }
 
+
 def get_translations(slug, log: bool = False):
     if log:
         print(f"+ Scraping translations for {slug}")
@@ -61,10 +62,12 @@ def get_translations(slug, log: bool = False):
         language_name = anchor.contents[0]
         language_code = LANGUAGE_CODES[language_name]
 
-        translations.append({
-            "url": url,
-            "language_name": language_name,
-            "language_code": language_code,
-        })
+        translations.append(
+            {
+                "url": url,
+                "language_name": language_name,
+                "language_code": language_code,
+            }
+        )
 
     return translations
