@@ -54,7 +54,7 @@ def get_translations(slug, log: bool = False):
     # Scrape HTML
     translations = []
 
-    soup = BeautifulSoup(r.text)
+    soup = BeautifulSoup(r.text, "html.parser")
     for entry in soup.find_all("div", class_="interwiki__entry"):
         anchor = entry.find("a")
 
