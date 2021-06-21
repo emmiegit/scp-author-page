@@ -24,6 +24,7 @@ class Builder:
         "jinja_env",
         "template",
         "data",
+        "log",
     )
 
     def __init__(
@@ -31,7 +32,11 @@ class Builder:
         directory: str,
         data_filename: str = "data.toml",
         input_template: str = "template.j2",
+        log: bool = False,
     ):
+        if log:
+            print("+ Creating jinja environment")
+
         self.jinja_env = Environment(
             loader=FileSystemLoader(directory),
             autoescape=False,
@@ -42,14 +47,21 @@ class Builder:
 
         self.directory = directory
         self.template = self.jinja_env.get_template(input_template)
-        self.data = load_data(os.path.join(directory, data_filename))
+        self.data = load_data(os.path.join(directory, data_filename), log)
+        self.log = log
 
     def render(self, output_filename: str = "output.ftml"):
         output_path = os.path.join(self.directory, output_filename)
         output_data = self.render_string()
 
         with open(output_path, "w") as file:
+            if self.log:
+                print(f"+ Writing to {output_path}")
+
             file.write(output_data)
 
     def render_string(self) -> str:
+        if self.log:
+            print("+ Rendering templates")
+
         return self.template.render(self.data)

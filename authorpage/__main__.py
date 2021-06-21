@@ -20,5 +20,6 @@ if __name__ == "__main__":
         sys.exit(1)
 
     for directory in sys.argv[1:]:
-        builder = Builder(directory)
+        print(f"Building template: '{directory}'")
+        builder = Builder(directory, log=True)
         builder.render()

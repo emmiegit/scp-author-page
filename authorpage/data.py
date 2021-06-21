@@ -19,11 +19,17 @@ from .wikidot import normalize
 SCP_NAME_REGEX = re.compile(r"SCP-[1-9]?[0-9]{3}(?:-(?:J|EX))?")
 
 
-def load_data(data_path: str) -> dict:
+def load_data(data_path: str, log: bool = False) -> dict:
     with open(data_path) as file:
+        if log:
+            print(f"+ Loading {data_path}")
+
         data = toml.load(file)
 
     # Hydrate data according to structures
+    if log:
+        print(f"+ Hydrating {len(data['articles'])} article entries")
+
     for article in data["articles"]:
         name = article["name"]
 

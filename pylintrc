@@ -159,7 +159,7 @@ callbacks=hook_,cbf_
 [BASIC]
 
 # List of builtins function names that should not be used, separated by a comma
-bad-functions=print
+bad-functions=
 
 # Good variable names which should always be accepted, separated by a comma
 good-names=i,j,k,id,_
