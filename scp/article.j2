@@ -28,6 +28,11 @@
 {%- endif -%}
 {{ ' ' -}} (##green|+%%rating%%##) (%%comments%% 💬)[[/span]]
 {{ render_article_metadata(article) }}
+{% if article.snippet %}
+[[div class="blockquote"]]
+{{ article.snippet }}
+[[/div]]
+{% endif %}
 ----
 [[div class="page-stats"]]
 {% raw %}
