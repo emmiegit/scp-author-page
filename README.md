@@ -10,7 +10,7 @@ Requires Python 3.7+. Available under the terms of the MIT License.
 $ pip install -r requirements.txt
 ```
 
-Also install `requirements-dev.txt` if developing. All files should be formatted with [black](https://github.com/psf/black).
+Also install `requirements-dev.txt` if developing. All Python code should be formatted with [black](https://github.com/psf/black).
 
 ## Linting
 
