@@ -1,2 +1,4 @@
 Jinja2>=3.0
+beautifulsoup4>=4.9
+requests>=2.25
 toml>=0.10

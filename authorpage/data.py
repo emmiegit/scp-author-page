@@ -14,6 +14,7 @@ import re
 
 import toml
 
+from .translations import get_translations
 from .wikidot import normalize
 
 SCP_NAME_REGEX = re.compile(r"SCP-[1-9]?[0-9]{3}(?:-(?:J|EX))?")
@@ -57,9 +58,13 @@ def load_data(data_path: str, log: bool = False) -> dict:
             article["contest"] = None
 
         # Add snake_case version of kebab-case keys
-        for key, value in tuple(article.items()):
-            if "-" in key:
-                snake_key = key.replace("-", "_")
+        for kebab_key, value in tuple(article.items()):
+            if "-" in kebab_key:
+                snake_key = kebab_key.replace("-", "_")
                 article[snake_key] = value
+                del article[kebab_key]
+
+        # Scrape translations from pages
+        article["translations"] = get_translations(article["slug"], log)
 
     return data
