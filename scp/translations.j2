@@ -1,5 +1,8 @@
 {% macro render_translations(translations) -%}
-  {%- for translation in translations -%}
-    [{{ translation.url }} {{ translation.language_code }}]{% if not loop.last %}, {% endif %}
-  {%- endfor -%}
+    {%- if translations -%}
+        Translations: {{- ' ' }}
+        {%- for translation in translations -%}
+            [{{ translation.url }} {{ translation.language_code }}]{% if not loop.last %}, {% endif %}
+        {%- endfor -%}
+    {%- endif -%}
 {% endmacro %}
