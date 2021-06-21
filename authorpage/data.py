@@ -24,8 +24,6 @@ def load_data(data_path: str) -> dict:
         data = toml.load(file)
 
     # Hydrate data according to structures
-    base_url = data["base-url"]
-
     for article in data["articles"]:
         name = article["name"]
 
