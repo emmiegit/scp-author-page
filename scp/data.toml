@@ -82,20 +82,24 @@ snippet = "Your session will expire after 118 seconds of inactivity."
 [[articles]]
 name = "SCP-5502"
 title = "Where the Smoke Trail Ends"
+snippet = "SCP-5502 refers to an event on 2034/05/05 at around 04:10 UTC wherein all Fifthist-related anomalies known to the Foundation became neutralized."
 
 [[articles]]
 name = "SCP-5134"
 title = "Itchy"
+snippet = "Consequently, any physical contact on an infected individual will permanently scrape off that area of bodily tissue."
 
 [[articles]]
 name = "SCP-5446"
 title = "Shock Troops"
 contest = ["jam-con-2021", "JamCon 2021"]
+snippet = "Originally SCP-5446 was held in a Site-19 locker before being requisitioned to produce sea-based security personnel."
 
 [[articles]]
 name = "SCP-5871"
 title = "Retroactive Knife"
 contest = ["jam-con-2021", "JamCon 2021"]
+snippet = "The object was discovered in an anomalous burial site within modern-day Mongolia in 1831 and was created in 2020."
 
 [[articles]]
 name = "SCP-6000 Contest Entry"
@@ -103,6 +107,7 @@ title = "The True Empire"
 slug = "6000contestaisstorm"
 co-authors = ["stormbreath"]
 contest = ["scp6000contesthub", "6k-Con"]
+snippet = "Daevite control of nuclear weapons and ICBMs for delivery is a certainty."
 
 # Tales
 [[articles]]
@@ -110,12 +115,14 @@ type = "tale"
 name = "The Heart of the Beast"
 slug = "heart-of-the-beast"
 contest = ["canon-renaissance-contest", "Canon Renaissance Contest"]
+snippet = "Fae shook her head. \"I really don't know. But — at least we can make his last week here a happy one.\""
 
 [[articles]]
 type = "tale"
 name = "The Pumpkin Mystery"
 slug = "pumpkin-mystery"
 contest = ["jam-con-2021", "JamCon 2021"]
+snippet = "Early on the morning after, residents gathered in shock before the ruins of our Civic Center, surrounded by uprooted trees and shreds of pumpkins throughout the park."
 
 # GoI Formats
 [[articles]]
