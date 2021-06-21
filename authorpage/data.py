@@ -41,6 +41,7 @@ def load_data(data_path: str) -> dict:
 
         if "slug" not in article:
             article["slug"] = normalize(name)
+            article["normal-slug"] = True
 
         if "title" not in article:
             article["title"] = name
@@ -50,5 +51,11 @@ def load_data(data_path: str) -> dict:
 
         if "contest" not in article:
             article["contest"] = None
+
+        # Add snake_case version of kebab-case keys
+        for key, value in tuple(article.items()):
+            if "-" in key:
+                snake_key = key.replace("-", "_")
+                article[snake_key] = value
 
     return data

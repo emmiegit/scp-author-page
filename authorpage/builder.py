@@ -35,6 +35,7 @@ class Builder:
         self.jinja_env = Environment(
             loader=FileSystemLoader(directory),
             autoescape=False,
+            trim_blocks=True,
             keep_trailing_newline=True,
         )
         self.jinja_env.filters["normalize"] = normalize

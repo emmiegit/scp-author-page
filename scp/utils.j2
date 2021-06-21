@@ -1,3 +1,11 @@
+{% macro link(slug, name, is_normal = False) -%}
+  {% if is_normal -%}
+    [[[{{name}}]]]
+  {%- else -%}
+    [[[{{slug}}|{{name}}]]]
+  {%- endif -%}
+{%- endmacro %}
+
 {% macro tag(tag, name) -%}
   [/system:page-tags/tag/{{tag}}#pages {{name}}]
 {%- endmacro %}

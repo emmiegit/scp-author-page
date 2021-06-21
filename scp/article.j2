@@ -1,3 +1,41 @@
-{% macro render_article(data) -%}
-    {{data|pprint}}
-{%- endmacro %}
+{% from 'utils.j2' import link, tag, user %}
+
+{% macro render_article_metadata(article) %}
+  {%- if article.type == "goi-format" -%}
+    GoI: {{tag(article.goi[0], article.goi[1])}} {{- '\n' }}
+  {%- endif %}
+
+  {%- if article.co_authors -%}
+  Written with: {% for author in article.co_authors -%}{{user(author)}}{% if not loop.last %}, {% endif %}{% endfor %} {{- '\n' }}
+  {%- endif %}
+
+  {%- if article.contest -%}
+    For: {{link(article.contest[0], article.contest[1])}} {{- '\n' }}
+  {%- endif %}
+{% endmacro %}
+
+{% macro render_article(article) %}
+[[div class="blockquote"]]
+[[module ListPages name="{{article.slug}}" limit="1"]]
+{% if article.title_override -%}
+  [[span class="page-header"]]{{article.title_override}}[[/span]]
+{%- else -%}
+  [[span class="page-header"]]**{{link(article.slug, article.name, article.normal_slug)}}**
+  {%- if article.title -%}
+    : {{article.title}}
+  {%- endif %} (##green|+%%rating%%##) (%%comments%% 💬)[[/span]]
+{%- endif %}
+
+{{render_article_metadata(article)}}
+----
+[[div class="page-stats"]]
+{% raw %}
+Written: {{%%created_at%%}}
+Last Edited: {{%%updated_at%%}} by %%updated_by%%
+Last Commented: {{%%commented_at%%}} by %%commented_by%%
+Tags: {{%%tags%%}}
+{% endraw %}
+[[/div]]
+[[/module]]
+[[/div]]
+{% endmacro %}

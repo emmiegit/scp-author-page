@@ -15,10 +15,20 @@ http://www.wikidot.com/account/messages#/new/4598089
 --]
 
 {% from 'article.j2' import render_article %}
-{% from 'utils.j2' import tag, user %}
+{% from 'utils.j2' import link, tag, user %}
 
 [[include theme:black-highlighter-theme]]
 [[include component:pride-highlighter | inc-nb-alt=--] ]]
+
+[[module CSS]]
+.page-header {
+    font-size: 120%;
+}
+
+.page-stats {
+    font-size: 80%;
+}
+[[/module]]
 
 [!-- Image credit: https://commons.wikimedia.org/wiki/File:Birds_of_Sweden_2016_52.jpg --]
 [[include component:image-block

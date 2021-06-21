@@ -31,7 +31,7 @@ title = "Lover's Quarrel"
 [[articles]]
 name = "SCP-4853"
 title = "&SCP-4853"
-title-override = true
+title-override = "&**[[[SCP-4853]]]**"
 
 [[articles]]
 name = "SCP-4781"
@@ -114,8 +114,8 @@ goi = ["unusual-incidents-unit", "Unusual Incidents Unit"]
 # Hubs
 [[articles]]
 type = "hub"
-name = "Finding Asmodeus Hub"
-title = "Finding Asmodeus"
+name = "Finding Asmodeus"
+slug = "finding-asmodeus-hub"
 contest = ["canon-renaissance-contest", "Canon Renaissance Contest"]
 
 # Author Page
