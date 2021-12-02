@@ -1,5 +1,8 @@
 {% macro link(slug, name, is_normal = False) -%}
-  {% if is_normal -%}
+  {% if slug.startswith('/') -%}
+    {# Is actually a wiki-relative link, like a forum path #}
+    [{{ slug }} {{ name }}]
+  {%- else if is_normal -%}
     [[[{{ name }}]]]
   {%- else -%}
     [[[{{ slug }}|{{ name }}]]]
