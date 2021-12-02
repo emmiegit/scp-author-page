@@ -2,7 +2,7 @@
   {% if slug.startswith('/') -%}
     {# Is actually a wiki-relative link, like a forum path #}
     [{{ slug }} {{ name }}]
-  {%- else if is_normal -%}
+  {%- elif is_normal -%}
     [[[{{ name }}]]]
   {%- else -%}
     [[[{{ slug }}|{{ name }}]]]
