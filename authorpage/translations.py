@@ -47,12 +47,12 @@ LANGUAGE_CODES = {
     "scp-jp": "JP",
     "scpko": "KO",
     "scp-pl": "PL",
-    "scp-pt-br": "PT-BR",
+    "scp-pt-br": "PT",
     "scp-ru": "RU",
     "scp-th": "TH",
     "scp-ukrainian": "UA",
     "scp-vn": "VN",
-    "scp-zh-tr": "ZH-TR",
+    "scp-zh-tr": "ZH",
 }
 
 
