@@ -10,30 +10,43 @@
 # WITHOUT ANY WARRANTY. See the LICENSE file for more details.
 #
 
-import requests
-from bs4 import BeautifulSoup
+import re
 
-INTERWIKI_URL = "https://interwiki.scpdb.org/"
-INTERWIKI_WIKI = "scp-wiki"
-INTERWIKI_LANGUAGE = "en"
+import requests
+
+WIKIDOT_URL_REGEX = re.compile(r"https?://([a-z0-9\-]+)\.wikidot\.com/(.+)")
+
+CROM_ENDPOINT = "https://api.crom.avn.sh/graphql"
+CROM_WIKIDOT_URL = "http://scp-wiki.wikidot.com"
+CROM_QUERY = """
+query InterwikiQuery($url: URL!) {
+    page(url: $url) {
+        translations {
+            url
+        }
+    }
+}
+"""
 
 LANGUAGE_CODES = {
-    "中文": "CN",
-    "Česky": "CS",
-    "Français": "FR",
-    "Deutsch": "DE",
-    "International": "INT",
-    "Italiano": "IT",
-    "日本語": "JP",
-    "한국어": "KO",
-    "Polski": "PL",
-    "Português": "PT",
-    "Русский": "RU",
-    "Español": "ES",
-    "ภาษาไทย": "TH",
-    "繁體中文": "ZH",
-    "Українська": "UK",
-    "Tiếng Việt": "VN",
+    "scp-wiki-cn": "CN",
+    "scp-cs": "CS",
+    "scp-wiki-de": "DE",
+    "scp-el": "EL",
+    "lafundacionscp": "ES",
+    "fondationscp": "FR",
+    "scp-idn": "ID",
+    "scp-int": "INT",
+    "fondazionescp": "IT",
+    "scp-jp": "JP",
+    "scpko": "KO",
+    "scp-pl": "PL",
+    "scp-pt-br": "PT-BR",
+    "scp-ru": "RU",
+    "scp-th": "TH",
+    "scp-ukrainian": "UA",
+    "scp-vn": "VN",
+    "scp-zh-tr": "ZH-TR",
 }
 
 
@@ -43,31 +56,32 @@ def get_translations(slug, log: bool = False):
 
     # Make request
     r = requests.get(
-        INTERWIKI_URL,
-        params={
-            "wiki": INTERWIKI_WIKI,
-            "lang": INTERWIKI_LANGUAGE,
-            "page": slug,
+        CROM_ENDPOINT,
+        headers={
+            "Content-Type": "application/json",
+        },
+        json={
+            "query": CROM_QUERY,
+            "variables": {
+                "url": f"{CROM_WIKIDOT_URL}/{slug}",
+            },
         },
     )
     r.raise_for_status()
-
-    # Scrape HTML
+    response_data = r.json()
     translations = []
 
-    soup = BeautifulSoup(r.text, "html.parser")
-    for entry in soup.find_all("div", class_="interwiki__entry"):
-        anchor = entry.find("a")
+    for data in response_data["page"]["translations"]:
+        url = data["url"]
+        match = WIKIDOT_URL_REGEX.fullmatch(url)
+        if match is None:
+            raise ValueError(f"Received Wikidot URL doesn't match regex: {url}")
 
-        url = anchor["href"]
-        language_name = anchor.contents[0]
-        language_code = LANGUAGE_CODES[language_name]
-
+        site_slug = match[1]
         translations.append(
             {
                 "url": url,
-                "language_name": language_name,
-                "language_code": language_code,
+                "language_code": LANGUAGE_CODES[site_slug],
             }
         )
 
