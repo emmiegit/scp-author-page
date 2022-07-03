@@ -28,6 +28,12 @@ query InterwikiQuery($url: URL!) {
 }
 """
 
+CROM_HEADERS = {
+    "Accept-Encoding": "gzip, deflate, br",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+}
+
 LANGUAGE_CODES = {
     "scp-wiki-cn": "CN",
     "scp-cs": "CS",
@@ -55,11 +61,9 @@ def get_translations(slug, log: bool = False):
         print(f"+ Scraping translations for {slug}")
 
     # Make request
-    r = requests.get(
+    r = requests.post(
         CROM_ENDPOINT,
-        headers={
-            "Content-Type": "application/json",
-        },
+        headers=CROM_HEADERS,
         json={
             "query": CROM_QUERY,
             "variables": {
@@ -71,7 +75,10 @@ def get_translations(slug, log: bool = False):
     response_data = r.json()
     translations = []
 
-    for data in response_data["page"]["translations"]:
+    if "errors" in response_data:
+        raise ValueError(response_data["errors"])
+
+    for data in response_data["data"]["page"]["translations"]:
         url = data["url"]
         match = WIKIDOT_URL_REGEX.fullmatch(url)
         if match is None:
