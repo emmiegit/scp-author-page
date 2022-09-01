@@ -58,7 +58,7 @@ LANGUAGE_CODES = {
 
 def get_translations(slug, log: bool = False):
     if log:
-        print(f"+ Scraping translations for {slug}")
+        print(f"+ Pulling translations for {slug}")
 
     # Make request
     r = requests.post(
