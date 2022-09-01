@@ -117,6 +117,13 @@ slug = "scp-6115"
 contest = ["/forum/t-14303381/10th-annual-holiday-art-exchange", "2021 Art Exchange"]
 snippet = "This system does not utilize traditional boundaries between organs and bodily tissue, instead opting for an internal circulatory system within the confines of their body composed almost entirely of thaumaturgic medium fluids."
 
+[[articles]]
+name = "SCP-7200"
+title = "boats."
+slug = "scp-7200"
+contest = ["scp7000contesthub", "7k-Con"]
+snippet = "SCP-7200 is an anomalous phenomenon causing the disappearances of non-military ships in international waters."
+
 # Tales
 [[articles]]
 type = "tale"
