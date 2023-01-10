@@ -140,6 +140,13 @@ slug = "pumpkin-mystery"
 contest = ["jam-con-2021", "JamCon 2021"]
 snippet = "Early on the morning after, residents gathered in shock before the ruins of our Civic Center, surrounded by uprooted trees and shreds of pumpkins throughout the park."
 
+[[articles]]
+type = "tale"
+name = "Stealing Something Else"
+slug = "stealing-something-else"
+contents = ["/forum/t-15388623/11th-annual-holiday-art-exchange", "2022 Art Exchange"]
+snippet = "Foundation Area-529 is located underground on the island of Barentsøya, an officially-uninhabited island part of the Svalbard archipelago, which is considered to be part of Norway. It was created in 1958 to provide a sustainable containment solution for SCP-████-1 instances."
+
 # GoI Formats
 [[articles]]
 type = "goi-format"
