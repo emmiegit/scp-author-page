@@ -15,6 +15,7 @@ import re
 import requests
 
 WIKIDOT_URL_REGEX = re.compile(r"https?://([a-z0-9\-]+)\.wikidot\.com/(.+)")
+RUSSIA_URL_REGEX = re.compile(r"https?://scpfoundation.net/(.+)")
 
 CROM_ENDPOINT = "https://api.crom.avn.sh/graphql"
 CROM_WIKIDOT_URL = "http://scp-wiki.wikidot.com"
@@ -56,6 +57,18 @@ LANGUAGE_CODES = {
 }
 
 
+def get_site_slug(url):
+    match = RUSSIA_URL_REGEX.fullmatch(url)
+    if match is not None:
+        return "scp-ru"
+
+    match = WIKIDOT_URL_REGEX.fullmatch(url)
+    if match is not None:
+        return match[1]
+
+    raise ValueError(f"Received Wikidot URL doesn't match regex: {url}")
+
+
 def get_translations(slug, log: bool = False):
     if log:
         print(f"+ Pulling translations for {slug}")
@@ -80,11 +93,7 @@ def get_translations(slug, log: bool = False):
 
     for data in response_data["data"]["page"]["translations"]:
         url = data["url"]
-        match = WIKIDOT_URL_REGEX.fullmatch(url)
-        if match is None:
-            raise ValueError(f"Received Wikidot URL doesn't match regex: {url}")
-
-        site_slug = match[1]
+        site_slug = get_site_slug(url)
         translations.append(
             {
                 "url": url,
