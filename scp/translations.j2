@@ -1,8 +1,12 @@
+{# The 'scp-ru.wikidot' check is to avoid duplicate RU entries due to the new site #}
+
 {% macro render_translations(translations) -%}
     {%- if translations -%}
         Translations: {{- ' ' }}
         {%- for translation in translations -%}
-            [{{ translation.url }} {{ translation.language_code }}]{% if not loop.last %}, {% endif %}
+            {%- if not 'scp-ru.wikidot.com' in translation.url -%}
+                [{{ translation.url }} {{ translation.language_code }}]{% if not loop.last %}, {% endif %}
+            {%- endif -%}
         {%- endfor -%}
     {%- endif -%}
 {% endmacro %}
