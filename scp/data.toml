@@ -125,6 +125,12 @@ co-authors = ["smlt"]
 contest = ["scp7000contesthub", "7k-Con"]
 snippet = "SCP-7200 is an anomalous phenomenon causing the disappearances of non-military ships in international waters."
 
+[[articles]]
+name = "SCP-7558"
+title = "Always Test Your Backups"
+slug = "scp-7558"
+snippet = "When activated, it opened a link to a stable pocket universe located at a fixed location (SCP-7558-A), with the goal that it would protect documents, records, and other materials against dimensional shifts and CK-Class Reality Restructuring Scenarios."
+
 # Tales
 [[articles]]
 type = "tale"
