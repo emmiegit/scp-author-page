@@ -150,8 +150,15 @@ snippet = "Early on the morning after, residents gathered in shock before the ru
 type = "tale"
 name = "Stealing Something Else"
 slug = "stealing-something-else"
-contents = ["/forum/t-15388623/11th-annual-holiday-art-exchange", "2022 Art Exchange"]
+contest = ["/forum/t-15388623/11th-annual-holiday-art-exchange", "2022 Art Exchange"]
 snippet = "Foundation Area-529 is located underground on the island of Barentsøya, an officially-uninhabited island part of the Svalbard archipelago, which is considered to be part of Norway. It was created in 1958 to provide a sustainable containment solution for SCP-████-1 instances."
+
+[[articles]]
+type = "tale"
+name = "Continuous Integration"
+slug = "continuous-integration"
+contest = ["/forum/t-16456604/12th-annual-art-exchange", "2023 Art Exchange"]
+snippet = "\"You can't just rerun it until it passes. This isn't a web server, this is core infrastructure that powers the life and livelihood of two billion humans.\""
 
 # GoI Formats
 [[articles]]
