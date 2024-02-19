@@ -131,6 +131,13 @@ title = "Always Test Your Backups"
 slug = "scp-7558"
 snippet = "When activated, it opened a link to a stable pocket universe located at a fixed location (SCP-7558-A), with the goal that it would protect documents, records, and other materials against dimensional shifts and CK-Class Reality Restructuring Scenarios."
 
+[[articles]]
+name = "SCP-8000"
+title = "Her Owner"
+slug = "8000contestaismallard"
+contest = ["scp8000contesthub", "8k-Con"]
+snippet = "Instead, its primary interest seems to be in the well-being of itself and SCP-8000-1."
+
 # Tales
 [[articles]]
 type = "tale"
