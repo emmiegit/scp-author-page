@@ -42,7 +42,7 @@ LANGUAGE_CODES = {
     "scp-el": "EL",
     "lafundacionscp": "ES",
     "fondationscp": "FR",
-    "scp-idn": "ID",
+    "scp-id": "ID",
     "scp-int": "INT",
     "fondazionescp": "IT",
     "scp-jp": "JP",
