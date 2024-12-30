@@ -1,0 +1,8 @@
+{% macro render_art(label, filename, artist) %}
+[[tab {{ label }} by {{ artist }}]]
+[[div class="art"]]
+[[image {{ filename }}]]
+[[span class="art-label"]][[[{{ label }}]]] by [[*user {{ artist }}]][[/span]]
+[[/div]]
+[[/tab]]
+{% endmacro %}

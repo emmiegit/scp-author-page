@@ -14,6 +14,7 @@ http://www.wikidot.com/account/messages#/new/4598089
 --]
 
 {% from 'article.j2' import render_article %}
+{% from 'art.j2' import render_art %}
 {% from 'utils.j2' import link, tag, user %}
 
 [[include theme:black-highlighter-theme]]
@@ -26,6 +27,10 @@ http://www.wikidot.com/account/messages#/new/4598089
 
 .page-stats {
     font-size: 80%;
+}
+
+.art {
+    text-align: center;
 }
 [[/module]]
 
@@ -101,6 +106,19 @@ http://www.wikidot.com/account/messages#/new/4598089
     {% endif %}
 {%- endfor %}
 
+[!-- Artwork --]
+
+**Photographic records:**
+
+[[tabview]]
+[[tab 🖼️]]
+Click through each tab to see each piece of artwork.
+[[/tab]]
+{{ render_art('SCP-4322', 'art-4322-alces.jpeg', 'Rex_Atlas') }}
+{{ render_art('SCP-4322', 'art-4322-montagueetc.png', 'MontagueETC') }}
+{{ render_art('SCP-4838', 'art-4838-aethris.png', 'Aethris') }}
+[[/tabview]]
+
 **Other documents:**
 * [*http://kontainer.djkakt.us/aismallard In-progress reports]
 * [*http://scpdsandbox.wikidot.com/aismallard-misc Ancillary documents]
@@ -131,13 +149,13 @@ http://www.wikidot.com/account/messages#/new/4598089
 > **License:** CC-BY-SA 3.0
 > **Source Link:** [[[Alces' Statue Garden]]]
 
-> **Filename:** art-4838-aethris.png
-> **Author:** [[*user Aethris]]
-> **License:** CC-BY-SA 3.0
-> **Source Link:** [https://i.imgur.com/Rk6SSxu.png Aethris]
-
 > **Filename:** art-4322-montagueetc.png
 > **Author:** [[*user MontagueETC]]
 > **License:** CC-BY-SA 3.0
 > **Source Link:** [https://imgur.com/a/rest-now-weary-dead-EglryCO MontagueETC]
+
+> **Filename:** art-4838-aethris.png
+> **Author:** [[*user Aethris]]
+> **License:** CC-BY-SA 3.0
+> **Source Link:** [https://i.imgur.com/Rk6SSxu.png Aethris]
 [[include component:license-box-end]]

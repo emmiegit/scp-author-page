@@ -102,5 +102,4 @@ def get_translations(slug, log: bool = False):
         )
 
     translations.sort(key=lambda translation: translation["language_code"])
-
     return translations
