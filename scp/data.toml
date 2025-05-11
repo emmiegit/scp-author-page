@@ -138,6 +138,12 @@ slug = "scp-8998"
 contest = ["scp8000contesthub", "8k-Con"]
 snippet = "This is contrary to behavior of other documented apex-tier pluripotent entities, which often engage in behaviors such as accruing worshippers, creating paranormal artifacts, or intervening to achieve certain outcomes. Instead, its primary interest seems to be in the well-being of itself and SCP-8998-1."
 
+[[articles]]
+name = "SCP-8178"
+title = "The Quiet"
+slug = "scp-8178"
+snippet = "Specifically, such individuals become aware of the sounds and movements of TALLL[!-- sic --] entities."
+
 # Tales
 [[articles]]
 type = "tale"
