@@ -144,6 +144,12 @@ title = "The Quiet"
 slug = "scp-8178"
 snippet = "Specifically, such individuals become aware of the sounds and movements of TALLL[!-- sic --] entities."
 
+[[articles]]
+name = "SCP-8125-J"
+title = "Generally Pointless Thing"
+slug = "scp-8125-j"
+snippet = "Apologies, you're right! Based on the clarifications you provided, \"Keter\" would suit this anomaly much better."
+
 # Tales
 [[articles]]
 type = "tale"
