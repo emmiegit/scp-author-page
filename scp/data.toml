@@ -151,9 +151,9 @@ slug = "scp-8125-j"
 snippet = "Apologies, you're right! Based on the clarifications you provided, \"Keter\" would suit this anomaly much better."
 
 [[articles]]
-name = "SCP-9994"
+name = "SCP-9201"
 title = "ACID"
-slug = "scp-9994"
+slug = "scp-9201"
 contest = ["scp9000contesthub", "9k-Con"]
 snippet = "For mundane forms of information, designing systems which exhibit these properties can be challenging enough. However, here at the Foundation we deal with self-modifying data, retroactive anomalies, and all manner of infohazards, which makes ACID compliance seem impossible."
 
