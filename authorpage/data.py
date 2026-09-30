@@ -17,7 +17,7 @@ import tomllib
 from .translations import get_translations
 from .wikidot import normalize
 
-SCP_NAME_REGEX = re.compile(r"SCP-[1-9]?[0-9]{3}(?:-(?:J|EX))?")
+SCP_NAME_REGEX = re.compile(r"SCP-L?[1-9]?[0-9]{3}(?:-(?:J|EX))?")
 
 
 def load_data(data_path: str, log: bool = False) -> dict:
