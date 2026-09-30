@@ -163,6 +163,12 @@ title = "A New York"
 slug = "scp-9306"
 snippet = "SCP-9306 is Public Site-28, a large-scale Foundation facility occupying a significant portion of Manhattan Island within New York City."
 
+[[articles]]
+name = "SCP-L402"
+title = "From Last Time"
+slug = "scp-l402"
+snippet = "Revived instances of SCP-L402-1 must be subjected to Class-F amnestic therapy prior to being recruited as D-class personnel."
+
 # Tales
 [[articles]]
 type = "tale"
