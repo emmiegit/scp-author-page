@@ -32,7 +32,7 @@
 {% if article.snippet %}
 [[div class="blockquote"]]
 {{ article.snippet }}
-[[/tab]]
+[[/div]]
 
 {% endif %}
 ----
@@ -44,5 +44,5 @@ Tags: {{ '{{%%tags%%}}' }} {{ '{{%%_tags%%}}' }}
 {{ render_translations(article.translations) }}
 [[/div]]
 [[/module]]
-[[/div]]
+[[/tab]]
 {% endmacro %}
