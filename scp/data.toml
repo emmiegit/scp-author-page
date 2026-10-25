@@ -169,6 +169,12 @@ title = "From Last Time"
 slug = "scp-l402"
 snippet = "Revived instances of SCP-L402-1 must be subjected to Class-F amnestic therapy prior to being recruited as D-class personnel."
 
+[[articles]]
+name = "SCP-9352"
+title = "Autopsy Anomaly"
+slug = "scp-9352"
+snippet = "SCP-9352 is a cadaver. The object's physical properties cannot be confirmed due to its anomalous nature."
+
 # Tales
 [[articles]]
 type = "tale"
