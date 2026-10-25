@@ -68,7 +68,7 @@ http://www.wikidot.com/account/messages#/new/4598089
 
 **Involved Projects:**
 
-[[collapsible show="▸ SCPs" hide="▾ SCPs"]]
+[[tabview]]
 
 {% for article in articles -%}
     {% if article.type == "scp" -%}
@@ -76,13 +76,13 @@ http://www.wikidot.com/account/messages#/new/4598089
     {%- endif %}
 {%- endfor %}
 
-[[/collapsible]]
+[[/tabview]]
 
 [!-- Tales --]
 
 **Field Reports:**
 
-[[collapsible show="▸ Tales" hide="▾ Tales"]]
+[[tabview]]
 
 {% for article in articles -%}
     {% if article.type == "tale" -%}
@@ -90,13 +90,13 @@ http://www.wikidot.com/account/messages#/new/4598089
     {%- endif %}
 {%- endfor %}
 
-[[/collapsible]]
+[[/tabview]]
 
 [!-- GoI Formats --]
 
 **Documents recovered from Groups of Interest:**
 
-[[collapsible show="▸ GoI Formats" hide="▾ GoI Formats"]]
+[[tabview]]
 
 {% for article in articles -%}
     {% if article.type == "goi-format" -%}
@@ -104,13 +104,13 @@ http://www.wikidot.com/account/messages#/new/4598089
     {%- endif %}
 {%- endfor %}
 
-[[/collapsible]]
+[[/tabview]]
 
 [!-- Hubs --]
 
 **Case files:**
 
-[[collapsible show="▸ Hubs" hide="▾ Hubs"]]
+[[tabview]]
 
 {% for article in articles -%}
     {% if article.type == "hub" -%}
@@ -118,7 +118,7 @@ http://www.wikidot.com/account/messages#/new/4598089
     {% endif %}
 {%- endfor %}
 
-[[/collapsible]]
+[[/tabview]]
 
 [!-- Artwork --]
 

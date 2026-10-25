@@ -16,7 +16,7 @@
 {% endmacro %}
 
 {% macro render_article(article) %}
-[[div class="blockquote"]]
+[[tab {{ article.title }}]]
 [[module ListPages name="{{ article.slug }}" limit="1"]]
 [[span class="page-header"]]
 {%- if article.title_override -%}
@@ -32,7 +32,7 @@
 {% if article.snippet %}
 [[div class="blockquote"]]
 {{ article.snippet }}
-[[/div]]
+[[/tab]]
 
 {% endif %}
 ----
