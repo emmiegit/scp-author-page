@@ -68,15 +68,21 @@ http://www.wikidot.com/account/messages#/new/4598089
 
 **Involved Projects:**
 
+[[collapsible show="▸ SCPs" hide="▾ SCPs"]]
+
 {% for article in articles -%}
     {% if article.type == "scp" -%}
         {{ render_article(article) }}
     {%- endif %}
 {%- endfor %}
 
+[[/collapsible]]
+
 [!-- Tales --]
 
 **Field Reports:**
+
+[[collapsible show="▸ Tales" hide="▾ Tales"]]
 
 {% for article in articles -%}
     {% if article.type == "tale" -%}
@@ -84,9 +90,13 @@ http://www.wikidot.com/account/messages#/new/4598089
     {%- endif %}
 {%- endfor %}
 
+[[/collapsible]]
+
 [!-- GoI Formats --]
 
 **Documents recovered from Groups of Interest:**
+
+[[collapsible show="▸ GoI Formats" hide="▾ GoI Formats"]]
 
 {% for article in articles -%}
     {% if article.type == "goi-format" -%}
@@ -94,15 +104,21 @@ http://www.wikidot.com/account/messages#/new/4598089
     {%- endif %}
 {%- endfor %}
 
+[[/collapsible]]
+
 [!-- Hubs --]
 
 **Case files:**
+
+[[collapsible show="▸ Hubs" hide="▾ Hubs"]]
 
 {% for article in articles -%}
     {% if article.type == "hub" -%}
         {{ render_article(article) }}
     {% endif %}
 {%- endfor %}
+
+[[/collapsible]]
 
 [!-- Artwork --]
 
@@ -118,9 +134,9 @@ Click through each tab to see each piece of artwork.
 [[/tabview]]
 
 **Other documents:**
-* [*http://kontainer.djkakt.us/aismallard In-progress reports]
-* [*http://scpdsandbox.wikidot.com/aismallard-misc Ancillary documents]
-* [[[aismallard|Personnel file]]]
+* [*http://kontainer.djkakt.us/aismallard In-progress reports] (sandbox)
+* [*http://scpdsandbox.wikidot.com/aismallard-misc Ancillary documents] (random stuff)
+* [[[aismallard|Personnel file]]] (author page)
 
 **Appendix:**
 [[collapsible show="▸ Show contingency procedures" hide="▾ Close file"]]
