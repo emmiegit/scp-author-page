@@ -158,6 +158,13 @@ contest = ["scp9000contesthub", "9k-Con"]
 snippet = "For mundane forms of information, designing systems which exhibit these properties can be challenging enough. However, here at the Foundation we deal with self-modifying data, retroactive anomalies, and all manner of infohazards, which makes ACID compliance seem impossible."
 
 [[articles]]
+name = "SCP-902"
+title = "The Anticipation is Killing Me"
+slug = "scp-902"
+co-authors = ["DrEverettMann"]
+snippet = "SCP-902-A is a wooden box with a sliding lid measuring 12 cm by 18 cm, and 9 cm deep; a human heart would fit neatly inside."
+
+[[articles]]
 name = "SCP-9306"
 title = "A New York"
 slug = "scp-9306"
