@@ -23,7 +23,7 @@
   {{ article.title_override }}
 {%- else -%}
   **{{ link(article.slug, article.name, article.normal_slug) }}**
-  {%- if article.title -%}
+  {%- if article.name != article.title -%}
     : {{ article.title }}
   {%- endif %}
 {%- endif -%}
