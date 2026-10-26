@@ -16,7 +16,7 @@
 {% endmacro %}
 
 {% macro render_article(article) %}
-[[tab {{ article.title }}]]
+[[tab {{ article.name }}]]
 [[module ListPages name="{{ article.slug }}" limit="1"]]
 [[span class="page-header"]]
 {%- if article.title_override -%}
