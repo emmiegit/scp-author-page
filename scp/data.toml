@@ -217,14 +217,14 @@ slug = "continuous-integration"
 contest = ["/forum/t-16456604/12th-annual-art-exchange", "2023 Art Exchange"]
 snippet = "\"You can't just rerun it until it passes. This isn't a web server, this is core infrastructure that powers the life and livelihood of two billion humans.\""
 
-[[article]]
+[[articles]]
 type = "tale"
 name = "The Longing"
 slug = "the-longing"
 contest = ["art-exchange-2025-hub", "2025 Art Exchange"]
 snippet = "I am the first ontokinetic to ever travel faster than light."
 
-[[article]]
+[[articles]]
 type = "tale"
 name = "In Plain Sight"
 slug = "in-plain-sight"
