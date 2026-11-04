@@ -229,6 +229,7 @@ type = "tale"
 name = "In Plain Sight"
 slug = "in-plain-sight"
 contest = ["art-exchange-2025-hub", "2025 Art Exchange"]
+goi = ["parawatch-hub", "Parawatch"]
 snippet = "It is also the setting of lesser-known events, such as the unsolved murder of Mack G. Farrell."
 
 # GoI Formats
