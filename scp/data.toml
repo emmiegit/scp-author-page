@@ -182,6 +182,12 @@ title = "Autopsy Anomaly"
 slug = "scp-9352"
 snippet = "SCP-9352 is a cadaver. The object's physical properties cannot be confirmed due to its anomalous nature."
 
+[[articles]]
+name = "SCP-9837"
+title = "Plane-ly Ridiculous"
+slug = "scp-9837"
+snippet = "Later analysis was able to translate the entity's speech as containing a threat to release highly-classified information, including four dozen Level-5 SCP files and [DATA EXPUNGED] concerning the Overseer Council."
+
 # Tales
 [[articles]]
 type = "tale"
