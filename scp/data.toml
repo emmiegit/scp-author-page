@@ -219,6 +219,13 @@ snippet = "\"You can't just rerun it until it passes. This isn't a web server, t
 
 [[article]]
 type = "tale"
+name = "The Longing"
+slug = "the-longing"
+contest = ["art-exchange-2025-hub", "2025 Art Exchange"]
+snippet = "I am the first ontokinetic to ever travel faster than light."
+
+[[article]]
+type = "tale"
 name = "In Plain Sight"
 slug = "in-plain-sight"
 contest = ["art-exchange-2025-hub", "2025 Art Exchange"]
