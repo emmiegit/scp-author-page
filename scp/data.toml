@@ -217,6 +217,13 @@ slug = "continuous-integration"
 contest = ["/forum/t-16456604/12th-annual-art-exchange", "2023 Art Exchange"]
 snippet = "\"You can't just rerun it until it passes. This isn't a web server, this is core infrastructure that powers the life and livelihood of two billion humans.\""
 
+[[article]]
+type = "tale"
+name = "In Plain Sight"
+slug = "in-plain-sight"
+contest = ["art-exchange-2025-hub", "2025 Art Exchange"]
+snippet = "It is also the setting of lesser-known events, such as the unsolved murder of Mack G. Farrell."
+
 # GoI Formats
 [[articles]]
 type = "goi-format"
