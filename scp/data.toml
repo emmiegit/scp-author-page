@@ -219,6 +219,13 @@ snippet = "\"You can't just rerun it until it passes. This isn't a web server, t
 
 [[articles]]
 type = "tale"
+name = "Crunch Time"
+slug = "crunch-time"
+contest = ["/forum/t-16984471/13th-annual-art-exchange", "2024 Art Exchange"]
+snippet = "But containing the anomaly isn't my job. My job is to make these GPUs faster."
+
+[[articles]]
+type = "tale"
 name = "The Longing"
 slug = "the-longing"
 contest = ["art-exchange-2025-hub", "2025 Art Exchange"]
