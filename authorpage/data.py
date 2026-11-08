@@ -18,6 +18,7 @@ from .translations import get_translations
 from .wikidot import normalize
 
 SCP_NAME_REGEX = re.compile(r"SCP-L?[1-9]?[0-9]{3}(?:-(?:J|EX))?")
+VALID_KEYS = frozenset(["base-url", "articles"])
 
 
 def load_data(data_path: str, log: bool = False) -> dict:
@@ -26,6 +27,11 @@ def load_data(data_path: str, log: bool = False) -> dict:
             print(f"+ Loading {data_path}")
 
         data = tomllib.load(file)
+
+    # Validate keys
+    for key in data:
+        if key not in VALID_KEYS:
+            raise ValueError(f"Invalid key in data TOML: {key}")
 
     # Hydrate data according to structures
     if log:
