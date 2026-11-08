@@ -188,6 +188,12 @@ title = "Plane-ly Ridiculous"
 slug = "scp-9837"
 snippet = "**Agent Güler:** //(aiming his thaumaturgically-enhanced rifle at SCP-9837-1's head)// Alright team, get ready in one, two...\n\n**SCP-9837-1:** Woah, woah, woah, what the hell?"
 
+[[articles]]
+name = "SCP-L953"
+title = "Secure, Contain, __//Protect//__"
+slug = "scp-l953"
+snippet = "**Object Class:** Keter"
+
 # Tales
 [[articles]]
 type = "tale"
